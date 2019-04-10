@@ -1,0 +1,17 @@
+
+
+<ion-content>
+  <div class="ion-padding">
+   hola mundo en API
+  </div>
+  <div class="ion-padding" *ngIf="paises">
+    <ion-card *ngFor="let item of paises">
+      <ion-card-header>
+        {{item.name}}
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img src ="{{item.flag}}"></ion-img>
+      </ion-card-content>
+  </ion-card>
+  </div>
+</ion-content>
